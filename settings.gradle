@@ -1,0 +1,3 @@
+rootProject.name = 'talkers-app'
+
+include 'hello-world'
