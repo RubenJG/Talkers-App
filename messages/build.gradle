@@ -1,0 +1,16 @@
+// SEE parent build.gradle
+
+group = 'app.talkers'
+version = '1.0.0'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+jar {
+    baseName = 'users'
+    version = '0.0.1-SNAPSHOT'
+}
+
+dependencies {
+    // Eureka
+    compile('org.springframework.cloud:spring-cloud-starter-eureka')
+}
