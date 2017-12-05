@@ -1,4 +1,4 @@
-package app.talkers.users;
+package app.talkers.zuul;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
