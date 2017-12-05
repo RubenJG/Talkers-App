@@ -23,3 +23,10 @@ Locally:
 
 * [Users](http://192.168.1.4:9000/api/v1/users/hello)
 * [Messages](http://192.168.1.4:9000/api/v1/messages/hello)
+
+# How to run
+
+Please create Run Configuration in which you set the environment variable 
+`SPRING_PROFILES_ACTIVE` to `default,local` when developing locally and to
+`default,prod` when in production
+
