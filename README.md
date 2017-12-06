@@ -16,13 +16,15 @@ We recommend the following tools for local development:
 * Eureka: 9001
 * Users: 9002
 * Messages: 9003
+* Tawks: 9004
 
 # Base URLs
 
 Locally:
 
-* [Users](http://192.168.1.4:9000/api/v1/users/hello)
-* [Messages](http://192.168.1.4:9000/api/v1/messages/hello)
+* [Users](http://localhost:9000/api/v1/users/hello)
+* [Messages](http://localhost:9000/api/v1/messages/hello)
+* [Tawks](http://localhost:9000/api/v1/tawks/hello)
 
 # How to run
 
