@@ -1,5 +1,11 @@
 version: '3'
 services:
+  eureka:
+    build: eureka/.
+    ports:
+      - "9901:9901"
+    environment:
+      - "SPRING_PROFILES_ACTIVE=default,prod"
   zuul:
     build: zuul/.
     ports:
@@ -8,12 +14,6 @@ services:
       - "SPRING_PROFILES_ACTIVE=default,prod"
     depends_on:
       - eureka
-  eureka:
-    build: eureka/.
-    ports:
-      - "9901:9901"
-    environment:
-      - "SPRING_PROFILES_ACTIVE=default,prod"
   users:
     build: users/.
     ports:
@@ -21,7 +21,7 @@ services:
     environment:
       - "SPRING_PROFILES_ACTIVE=default,prod"
     depends_on:
-      - eureka
+      - zuul
   messages:
     build: messages/.
     ports:
@@ -29,7 +29,7 @@ services:
     environment:
       - "SPRING_PROFILES_ACTIVE=default,prod"
     depends_on:
-      - eureka
+      - users
   tawks:
     build: tawks/.
     ports:
@@ -37,4 +37,4 @@ services:
     environment:
       - "SPRING_PROFILES_ACTIVE=default,prod"
     depends_on:
-      - eureka
+      - messages
