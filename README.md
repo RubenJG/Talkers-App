@@ -12,6 +12,7 @@ We recommend the following tools for local development:
 
 # Ports in use
 
+* UI: 9800
 * Zuul: 9900
 * Eureka: 9901
 * Users: 9902
