@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 @Service
 public class UserServiceImpl implements UserService {
 
-    private Map<Integer, User> usersMap = new HashMap();
+    private Map<Integer, User> usersMap = new HashMap<>();
     private Integer count = 1;
 
     @Override
