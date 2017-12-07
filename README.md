@@ -12,19 +12,19 @@ We recommend the following tools for local development:
 
 # Ports in use
 
-* Zuul: 9000
-* Eureka: 9001
-* Users: 9002
-* Messages: 9003
-* Tawks: 9004
+* Zuul: 9900
+* Eureka: 9901
+* Users: 9902
+* Messages: 9903
+* Tawks: 9904
 
 # Base URLs
 
 Locally:
 
-* [Users](http://localhost:9000/api/v1/users/hello)
-* [Messages](http://localhost:9000/api/v1/messages/hello)
-* [Tawks](http://localhost:9000/api/v1/tawks/hello)
+* [Users](http://localhost:9900/api/v1/users/hello)
+* [Messages](http://localhost:9900/api/v1/messages/hello)
+* [Tawks](http://localhost:9900/api/v1/tawks/hello)
 
 # How to run
 

@@ -6,7 +6,7 @@
 ## EUREKA ##############################################################################################################
 ########################################################################################################################
 
-eureka.client.serviceUrl.defaultZone: http://localhost:9001/eureka
+eureka.client.serviceUrl.defaultZone: http://localhost:9901/eureka
 eureka.client.register-with-eureka: true
 eureka.client.fetch-registry: true
 
