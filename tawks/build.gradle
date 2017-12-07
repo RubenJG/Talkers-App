@@ -6,11 +6,11 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 jar {
-    baseName = 'eureka'
+    baseName = 'tawks'
     version = 'latest'
 }
 
 dependencies {
     // Eureka
-    compile('org.springframework.cloud:spring-cloud-starter-eureka-server')
+    compile('org.springframework.cloud:spring-cloud-starter-eureka')
 }

@@ -1,0 +1,40 @@
+version: '3'
+services:
+  zuul:
+    build: zuul/.
+    ports:
+      - "9000:9000"
+    environment:
+      - "SPRING_PROFILES_ACTIVE=default,prod"
+    depends_on:
+      - eureka
+  eureka:
+    build: eureka/.
+    ports:
+      - "9001:9001"
+    environment:
+      - "SPRING_PROFILES_ACTIVE=default,prod"
+  users:
+    build: users/.
+    ports:
+      - "9002:9002"
+    environment:
+      - "SPRING_PROFILES_ACTIVE=default,prod"
+    depends_on:
+      - eureka
+  messages:
+    build: messages/.
+    ports:
+      - "9003:9003"
+    environment:
+      - "SPRING_PROFILES_ACTIVE=default,prod"
+    depends_on:
+      - eureka
+  tawks:
+    build: tawks/.
+    ports:
+      - "9004:9004"
+    environment:
+      - "SPRING_PROFILES_ACTIVE=default,prod"
+    depends_on:
+      - eureka

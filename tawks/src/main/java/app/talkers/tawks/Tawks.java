@@ -1,12 +1,12 @@
-package app.talkers.eureka;
+package app.talkers.tawks;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Eureka {
+public class Tawks {
 
     public static void main(String[] args) {
-        SpringApplication.run(Eureka.class, args);
+        SpringApplication.run(Tawks.class, args);
     }
 }
