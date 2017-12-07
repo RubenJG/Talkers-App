@@ -7,7 +7,7 @@ targetCompatibility = 1.8
 
 jar {
     baseName = 'eureka'
-    version = '0.0.1-SNAPSHOT'
+    version = 'latest'
 }
 
 dependencies {

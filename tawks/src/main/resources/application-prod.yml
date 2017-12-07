@@ -1,3 +1,14 @@
 #
 # Add PROD properties here!
 #
+
+########################################################################################################################
+## EUREKA ##############################################################################################################
+########################################################################################################################
+
+eureka.client.serviceUrl.defaultZone: http://localhost:9001/eureka
+eureka.client.register-with-eureka: true
+eureka.client.fetch-registry: true
+
+logging.level.com.netflix.eureka: 'OFF'
+logging.level.com.netflix.discovery: 'OFF'

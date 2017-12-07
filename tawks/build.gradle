@@ -6,8 +6,8 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 jar {
-    baseName = 'users'
-    version = '0.0.1-SNAPSHOT'
+    baseName = 'tawks'
+    version = 'latest'
 }
 
 dependencies {
