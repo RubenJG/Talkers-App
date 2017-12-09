@@ -14,7 +14,7 @@ buildscript {
     }
 }
 
-configure(subprojects) {
+configure(subprojects - project(":ui")) {
     apply plugin: 'java'
     apply plugin: 'idea'
     apply plugin: 'org.springframework.boot'
