@@ -1,0 +1,20 @@
+<div>
+  <div class="panel-body" *ngIf='tawk'>
+    <h1>{{tawk.tawkName}}</h1>
+    <div>
+      <div class="tawk-details">
+        <span class="tawk-title">Host Chat {{tawk.tawkId}}</span>
+      </div>
+    </div>
+    <div>
+      <div class="tawk-details">
+        <span class="tawk-title">Forum</span>
+      </div>
+    </div>
+  </div>
+  <div class="panel-footer">
+    <a class="btn btn-default" (click)='onBack()' style="width:80px">
+      <i class="glyphicon glyphicon-chevron-left"></i>Back
+    </a>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div>
+  <h1>{{pageTitle}}</h1>
+  <div class="panel-body">
+    <div>
+      <div *ngIf='tawks && tawks.length'>
+        <div *ngFor='let tawk of tawks'>
+          <div class="tawk">
+            <span class="tawk-title">{{tawk.tawkName}}</span>
+            <div class="pull-right options">
+              <a class="btn btn-primary" [routerLink]="['/tawks', tawk.tawkId]">
+                Enter as host
+              </a>
+              <a class="btn btn-primary" [routerLink]="['/tawks', tawk.tawkId]">
+                Enter
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
