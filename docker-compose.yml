@@ -1,11 +1,17 @@
 version: '3'
 services:
+  ui:
+    build: ui/.
+    ports:
+      - "9800:80"
   eureka:
     build: eureka/.
     ports:
       - "9901:9901"
     environment:
       - "SPRING_PROFILES_ACTIVE=default,prod"
+    depends_on:
+      - ui
   zuul:
     build: zuul/.
     ports:
